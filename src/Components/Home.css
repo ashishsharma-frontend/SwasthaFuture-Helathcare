@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,59 +8,14 @@
 }
 
 :root {
-  --Main-color: #1F1F1F;
-  --button-color: #4894FE;
-  --Green-Color: #DEF9C4;
+  --Main-color: #1f1f1f;
+  --button-color: #4894fe;
+  --Green-Color: #def9c4;
   --heading-font: "Outfit", sans-serif;
 }
 
-.main-container {
-    width: 100%;
-    padding: 10px;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    margin: o auto;
-    align-items: center;
-}
-
-.home {
-  max-width: 1250px;
-  width: 100%;
-  height: min-content;
-  margin: 0 auto;
-  background-color: var(--Green-Color);
-  border-radius: 23px;
-}
-
-.home-header h1 {
+.home-title {
   font-family: var(--heading-font);
-  font-size: 8.5rem;
-  font-size: clamp(3rem, 8vw, 10rem);
-  color: #1f1f1f;
-  text-align: center;
-  margin-bottom: -6rem;
-}
-
-.home-section {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  align-items: center;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.section-left,
-.section-right {
-  width: 50%;
-  min-height: 15vh;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 3rem;
 }
 
 .home-section .icons {
@@ -72,13 +27,73 @@
 }
 
 .home-section .svg {
-    border-radius: 50%;
-    background-color: #F5EFFF;
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    padding: 10px;
-    cursor: pointer;
+  border-radius: 50%;
+  background-color: #f5efff;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tabs button {
+  width: 160px;
+  border-radius: 100px;
+  border: none;
+  background-color: #ffff;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 23px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  border: 1px solid var(--button-color);
+}
+
+.tab-image-icon {
+  position: absolute;
+  top: 80%;
+  right: 5%;
+  padding: 15px;
+  background-color: var(--button-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-title {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-direction: column;
+  text-align: center;
 }
 
 
+.hospital-card svg {
+  font-size: 1.6rem;
+}
+
+.hospitals-swiper {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.hospital-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.card-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
